@@ -27,12 +27,36 @@ header {
     width: 100%;
     box-shadow: 0 3px 3px #BEBEBE;
 }
+
+header a {
+    text-decoration: none;
+    color: inherit;
+}
  h1,h2,h3,h4,h5,h6 {
     font-family:"Montserrat", sans-serif;
  }
 
  #logo {
     font-family:"Great Vibes", cursive;
+    letter-spacing: 2px;
+    color: #8A2BE2;
+    margin-top: .5em;
+    margin-bottom: .5em;
+ }
+
+ #menu {
+    font-size: 110%;
+    letter-spacing: 3px;
+    list-style-type: none;
+    color: #E0E0F3;
+ }
+
+ #menu li {
+    margin-bottom: 1em;
+ }
+
+ .active {
+    border-bottom: 1px solid #E0E0F3;
  }
 /* Main */ 
 main {
