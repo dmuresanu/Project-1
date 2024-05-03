@@ -14,16 +14,21 @@ body {
     display: flex;
     flex-direction: column;
     /* Generic project styles */
-    color: 3a3a3a;
+    color:#3a3a3a;
     font-family: Josefin Sans, sans-serif;
 }
 
 /* Header */
 header {
-    background-color: lightblue;
+    background-color: #FFB6C1;
+    padding: 0 1rem;
+    position: fixed;
+    z-index: 99;
+    width: 100%;
+    box-shadow: 0 3px 3px #BEBEBE;
 }
  h1,h2,h3,h4,h5,h6 {
-    font font-family:"Montserrat", sans-serif;
+    font-family:"Montserrat", sans-serif;
  }
 
  #logo {
@@ -31,12 +36,13 @@ header {
  }
 /* Main */ 
 main {
-    background-color: bisque;
+    background-color:#E0E0F3;
     /* Make main element take up any surplus space to push footer down */
     flex: 1 0 auto;
 }
 
 /* Footer */
 footer {
-    background-color: aquamarine;
+    background-color: #C8A2C8
+    ;
 }
