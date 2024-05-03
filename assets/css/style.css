@@ -22,7 +22,13 @@ body {
 header {
     background-color: blueviolet;
 }
+ h1,h2,h3,h4,h5,h6 {
+    font font-family:"Montserrat", sans-serif;
+ }
 
+ #logo {
+    font-family:"Great Vibes", cursive;
+ }
 /* Main */ 
 main {
     background-color: bisque;
