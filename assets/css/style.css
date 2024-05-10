@@ -58,6 +58,17 @@ header a {
  .active {
     border-bottom: 1px solid #E0E0F3;
  }
+
+ /* Navbar styles with dropdown toggle */
+ nav {
+    position: absolute;
+    background-color: #FFB6C1;
+    width: 100%;
+    left: 0;
+    padding: 0 1rem;
+    box-shadow: 0 3px 3px #BEBEBE;
+    display: none;
+ }
 /* Main */ 
 main {
     background-color:#E0E0F3;
