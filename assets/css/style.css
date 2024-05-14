@@ -20,12 +20,12 @@ body {
 
 /* Header */
 header {
-    background-color: #FFB6C1;
+    background-color: #f0edec;
     padding: 0 1rem;
     position: fixed;
     z-index: 99;
     width: 100%;
-    box-shadow: 0 3px 3px #BEBEBE;
+    box-shadow: 0 3px 3px #4a352b;
     display: flex;
     justify-content: space-between;
     align-items: baseline;
@@ -42,7 +42,7 @@ header a {
  #logo {
     font-family:"Great Vibes", cursive;
     letter-spacing: 2px;
-    color: #8A2BE2;
+    color: #4a352b;
     margin-top: .5em;
     margin-bottom: .5em;
  }
@@ -51,7 +51,7 @@ header a {
     font-size: 110%;
     letter-spacing: 3px;
     list-style-type: none;
-    color: #8A2BE2;
+    color: #4a352b;
  }
 
  #menu li {
@@ -59,17 +59,17 @@ header a {
  }
 
  .active {
-    border-bottom: 1px solid #8A2BE2;
+    border-bottom: 1px solid #4a352b;
  }
 
  /* Navbar styles with dropdown toggle */
  nav {
     position: absolute;
-    background-color: #FFB6C1;
+    background-color:#f0edec;
     width: 100%;
     left: 0;
     padding: 0 1rem;
-    box-shadow: 0 3px 3px #BEBEBE;
+    box-shadow: 0 3px 3px #4a352b;
     display: none;
     top: 100%;
  }
@@ -95,14 +95,14 @@ main {
 
 /* Hero section */
 #hero {
-    height: 800px;
+    height: 850px;
     width: 100%;
-    background: url(../images/hero-image.jpg) no-repeat center center/cover;
+    background: url(../images/hero.jpg) no-repeat center top/cover;
 }
 
 /* Footer */
 footer {
-    background-color: #C8A2C8
+    background-color: #977d68
     ;
 }
 
@@ -133,7 +133,7 @@ footer {
 /* Large devices (laptops and desktops, 992px and up) */
 @media screen and (min-width: 992px) {
     #menu a:hover{
-        border-bottom: 1px solid #8A2BE2;
+        border-bottom: 1px solid #4a352b;
     }
     
 }
