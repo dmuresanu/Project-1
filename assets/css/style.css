@@ -1,5 +1,6 @@
 /* Google fonts import */
-@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 
 /* Asterisk wildcard selector to override default syles added by the browser */
 * {
@@ -14,7 +15,7 @@ body {
     display: flex;
     flex-direction: column;
     /* Generic project styles */
-    color:#3a3a3a;
+    color: #3a3a3a;
     font-family: Josefin Sans, sans-serif;
 }
 
@@ -35,60 +36,67 @@ header a {
     text-decoration: none;
     color: inherit;
 }
- h1,h2,h3,h4,h5,h6 {
-    font-family:"Montserrat", sans-serif;
- }
 
- #logo {
-    font-family:"Great Vibes", cursive;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Montserrat", sans-serif;
+}
+
+#logo {
+    font-family: "Great Vibes", cursive;
     letter-spacing: 2px;
     color: #4a352b;
     margin-top: .5em;
     margin-bottom: .5em;
- }
+}
 
- #menu {
+#menu {
     font-size: 110%;
     letter-spacing: 3px;
     list-style-type: none;
     color: #4a352b;
- }
+}
 
- #menu li {
+#menu li {
     margin-bottom: 1em;
- }
+}
 
- .active {
+.active {
     border-bottom: 1px solid #4a352b;
- }
+}
 
- /* Navbar styles with dropdown toggle */
- nav {
+/* Navbar styles with dropdown toggle */
+nav {
     position: absolute;
-    background-color:#f0edec;
+    background-color: #f0edec;
     width: 100%;
     left: 0;
     padding: 0 1rem;
     box-shadow: 0 3px 3px #4a352b;
     display: none;
     top: 100%;
- }
+}
 
- /* Nav toggle */
- #nav-toggle:checked~nav {
+/* Nav toggle */
+#nav-toggle:checked~nav {
     display: block;
- }
+}
 
- #nav-toggle {
+#nav-toggle {
     display: none;
- }
+}
 
- .nav-toggle-label {
+.nav-toggle-label {
     font-size: 2rem;
- }
-/* Main */ 
+}
+
+/* Main */
 main {
-    background-color:#E0E0F3;
+    background-color: #E0E0F3;
 
     /* Make main element take up any surplus space to push footer down */
     flex: 1 0 auto;
@@ -114,7 +122,7 @@ main {
 }
 
 .hero-content h2 {
-    font-family:"Great Vibes", cursive;
+    font-family: "Great Vibes", cursive;
     font-size: 36px;
     margin-top: 250px;
     margin-bottom: 10px;
@@ -131,12 +139,12 @@ main {
 }
 
 .cta-button:hover {
-    background-color:  rgba(160, 106, 106, 0.8);
+    background-color: rgba(160, 106, 106, 0.8);
 }
 
 /* Introduction section styles */
 .circle-section {
-    background-color: #f0edec; 
+    background-color: #f0edec;
     padding: 50px 0;
 }
 
@@ -144,20 +152,20 @@ main {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    flex-direction: column; /* Change to column layout for mobile */
-    align-items: center; /* Center items vertically */
-    
+    flex-direction: column;/* Change to column layout for mobile */
+    align-items: center;/* Center items vertically */
+
 }
 
 .circle-wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 250px; 
-    height: 250px; 
-    border: 5px solid rgba(87, 68, 68, 0.8); 
-    border-radius: 50%; 
-    padding: 20px; 
+    width: 250px;
+    height: 250px;
+    border: 5px solid rgba(87, 68, 68, 0.8);
+    border-radius: 50%;
+    padding: 20px;
 }
 
 .circle-image {
@@ -169,16 +177,16 @@ main {
 
 
 .circle-image.left {
-    background-image: url('../images/Glamour.jpg'); 
+    background-image: url('../images/Glamour.jpg');
     background-size: cover;
 }
 
 .text-box {
-    background-color: rgba(87, 68, 68, 0.8); 
+    background-color: rgba(87, 68, 68, 0.8);
     color: #fff;
     padding: 3% 3% 3% 15%;
     border-radius: 5px;
-    
+
 }
 
 .text-box p {
@@ -186,7 +194,7 @@ main {
 }
 
 .introduction {
-    font-family:"Great Vibes", cursive;
+    font-family: "Great Vibes", cursive;
     font-size: 36px;
     letter-spacing: 2px;
 }
@@ -194,7 +202,7 @@ main {
 
 /* Mission section styles */
 .circle-section2 {
-    background-color: #f0edec; 
+    background-color: #f0edec;
     padding: 50px 0;
 }
 
@@ -202,19 +210,19 @@ main {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    flex-direction: column-reverse; /* Change to column layout for mobile */
-    align-items: center; /* Center items vertically */
+    flex-direction: column-reverse;/* Change to column layout for mobile */
+    align-items: center;/* Center items vertically */
 }
 
 .circle-wrapper2 {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 250px; 
-    height: 250px; 
-    border: 5px solid rgba(87, 68, 68, 0.8); 
-    border-radius: 50%; 
-    padding: 20px; 
+    width: 250px;
+    height: 250px;
+    border: 5px solid rgba(87, 68, 68, 0.8);
+    border-radius: 50%;
+    padding: 20px;
 }
 
 .circle-image {
@@ -225,12 +233,12 @@ main {
 }
 
 .circle-image.right {
-    background-image: url('../images/GG.jpg'); 
+    background-image: url('../images/GG.jpg');
     background-size: cover;
 }
 
 .text-box2 {
-    background-color: rgba(87, 68, 68, 0.8); 
+    background-color: rgba(87, 68, 68, 0.8);
     color: #fff;
     padding: 3% 15% 3% 3%;
     border-radius: 5px;
@@ -241,9 +249,21 @@ main {
 }
 
 .mission {
-    font-family:"Great Vibes", cursive;
+    font-family: "Great Vibes", cursive;
     font-size: 36px;
     letter-spacing: 2px;
+}
+
+/* Services section styles */
+.circle-image.left2 {
+    background-image: url('../images/Model2.jpg');
+    background-size: cover;
+}
+
+.services {
+        font-family: "Great Vibes", cursive;
+        font-size: 36px;
+        letter-spacing: 2px;
 }
 
 /* Footer */
@@ -279,57 +299,65 @@ footer {
 /*Media query: mobiles (up to 767px) */
 @media screen and (max-width: 767px) {
 
-/* Introduction section styles */
-.text-box {
-    background-color: rgba(87, 68, 68, 0.8); 
-    color: #f0edec;
-    margin-top: -25%;
-    padding: 35% 3% 3% 3%;
-    border-radius: 5px;
+    /* Introduction section styles */
+    .text-box {
+        background-color: rgba(87, 68, 68, 0.8);
+        color: #f0edec;
+        margin-top: -25%;
+        padding: 35% 3% 3% 3%;
+        border-radius: 5px;
+    }
+
+    .text-box p {
+        margin: 0;
+    }
+
+    .introduction {
+        font-size: 26px;
+        text-align: center;
+    }
+
+    p {
+        padding-top: 3%;
+        padding-bottom: 10%;
+        text-align: center;
+    }
+
+    /* Mission section styles */
+    .text-box2 {
+        background-color: rgba(87, 68, 68, 0.8);
+        color: #f0edec;
+        margin-top: -25%;
+        padding: 35% 3% 3% 3%;
+        border-radius: 5px;
+    }
+
+    .text-box2 p {
+        margin: 0;
+    }
+
+    .mission {
+        font-size: 26px;
+        text-align: center;
+    }
+
+    p {
+        padding-top: 3%;
+        padding-bottom: 10%;
+        text-align: center;
+    }
 }
 
-.text-box p {
-    margin: 0;
-}
-
-.introduction {
+/* Services section styles */
+.services {
     font-size: 26px;
     text-align: center;
 }
 
-p { 
-    padding-top: 3%;
-    padding-bottom: 10%;
-    text-align: center;   
-}
-
-/* Mission section styles */
-.text-box2 {
-    background-color: rgba(87, 68, 68, 0.8); 
-    color: #f0edec;
-    margin-top: -25%;
-    padding: 35% 3% 3% 3%;
-    border-radius: 5px;
-}
-
-.text-box2 p {
-    margin: 0;
-}
-
-.mission {
-    font-size: 26px;
-    text-align: center;
-}
-
-p { 
-    padding-top: 3%;
-    padding-bottom: 10%;
-    text-align: center;   
-}
-}
 
 /* Media query: tablets and larger (768px and up) */
 @media screen and (min-width: 768px) {
+
     /* Header */
     nav {
         display: block;
@@ -338,12 +366,12 @@ p {
         width: fit-content;
         padding-right: 1rem;
     }
-    
+
     #menu {
         display: flex;
     }
 
-    #menu > li {
+    #menu>li {
         padding-left: 1rem;
     }
 
@@ -358,90 +386,91 @@ p {
     }
 
     .hero-content h2 {
-        font-family:"Great Vibes", cursive;
+        font-family: "Great Vibes", cursive;
         font-size: 66px;
     }
 
-   /* Introduction section styles */
+    /* Introduction section styles */
     .circle-content {
-    flex-direction: row; /* Reset back to row layout for tablets and larger */
+        flex-direction: row;/* Reset back to row layout for tablets and larger */
     }
-    
-   .circle-content2 {
-    flex-direction: row;
-   }
 
-   .circle-image {
-    margin-bottom: 0; 
-   }
-
-   .text-box {
-   flex: 1; 
-   margin-left: -10%; 
-   margin-right: 10px;
-   background-color: rgba(87, 68, 68, 0.8); 
-   color: #f0edec;
-   padding: 3% 3% 3% 15%;
-   border-radius: 5px;
-   }
-
-   .text-box p {
-   margin: 0;
-   }
-
-   .introduction {
-    text-align: right;
-   }
-
-   p { 
-    padding-top: 3%;
-    text-align: right;   
-}
-
-   /* Mission section styles */
-   .circle-content2 {
-    flex-direction: row;
-   }
-
-   .circle-image {
-    margin-bottom: 0; 
-   }
-
-   .text-box2 p {
-    margin: 0;
+    .circle-image {
+        margin-bottom: 0;
     }
- 
+
+    .text-box {
+        flex: 1;
+        margin-left: -10%;
+        margin-right: 10px;
+        background-color: rgba(87, 68, 68, 0.8);
+        color: #f0edec;
+        padding: 3% 3% 3% 15%;
+        border-radius: 5px;
+    }
+
+    .text-box p {
+        margin: 0;
+    }
+
+    .introduction {
+        text-align: right;
+    }
+
+    p {
+        padding-top: 3%;
+        text-align: right;
+    }
+
+    /* Mission section styles */
+    .circle-content2 {
+        flex-direction: row;
+    }
+
+    .circle-image {
+        margin-bottom: 0;
+    }
+
+    .text-box2 p {
+        margin: 0;
+    }
+
     .text-box2 {
-    flex: 1;
-    margin-right: -10%;
-    margin-left: 10px;
-    background-color: rgba(87, 68, 68, 0.8); 
-    color: #fff;
-    padding: 3% 15% 3% 3%;
-    border-radius: 5px;
+        flex: 1;
+        margin-right: -10%;
+        margin-left: 10px;
+        background-color: rgba(87, 68, 68, 0.8);
+        color: #fff;
+        padding: 3% 15% 3% 3%;
+        border-radius: 5px;
     }
 
     .mission {
         text-align: left;
     }
- 
-    .pmission { 
-     padding-top: 3%;
-     text-align: left;   
+
+    .pmission {
+        padding-top: 3%;
+        text-align: left;
+    }
+
+    /* Services section styles */
+    .services {
+        text-align: right;
     }
 
 }
 
 /* Large devices (laptops and desktops, 992px and up) */
 @media screen and (min-width: 992px) {
-    #menu a:hover{
+    #menu a:hover {
         border-bottom: 1px solid #4a352b;
     }
 
     /* Instroduction section styles */
     .text-box {
         margin-right: 20px;
-    } 
+    }
 
     /* Mission section styles */
     .text-box2 {
@@ -452,13 +481,14 @@ p {
 
 /* X-Large devices (Large Desktops, 1500px and up) */
 @media screen and (min-width: 1500px) {
+
     /* Hero section */
     #hero {
         height: 1000px;
     }
 
     .hero-content h2 {
-        font-family:"Great Vibes", cursive;
+        font-family: "Great Vibes", cursive;
         font-size: 86px;
         margin-top: 650px;
         margin-bottom: 10px;
@@ -466,15 +496,15 @@ p {
 
     /* Introduction section styles */
     .circle-wrapper {
-        width: 350px; 
-        height: 350px; 
+        width: 350px;
+        height: 350px;
         margin-left: 150px;
     }
 
     .circle-image {
         width: 320px;
         height: 320px;
-        
+
     }
 
     .introduction {
@@ -491,8 +521,8 @@ p {
 
     /* Mission section styles */
     .circle-wrapper2 {
-        width: 350px; 
-        height: 350px; 
+        width: 350px;
+        height: 350px;
         margin-right: 150px;
     }
 
@@ -503,4 +533,11 @@ p {
     .text-box2 {
         margin-left: 30px;
     }
+
+    /* Services section styles */
+
+    .services {
+        font-size: 56px;
+    }
+
 }
