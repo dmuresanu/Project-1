@@ -169,7 +169,7 @@ main {
 
 
 .circle-image.left {
-    background-image: url('/assets/images/Glamour.jpg'); 
+    background-image: url('../images/Glamour.jpg'); 
     background-size: cover;
 }
 
@@ -225,7 +225,7 @@ main {
 }
 
 .circle-image.right {
-    background-image: url('/assets/images/GG.jpg'); 
+    background-image: url('../images/GG.jpg'); 
     background-size: cover;
 }
 
