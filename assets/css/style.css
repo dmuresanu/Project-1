@@ -123,6 +123,7 @@ main {
 
 .hero-content h2 {
     font-family: "Great Vibes", cursive;
+    color: darkgreen;
     font-size: 36px;
     margin-top: 250px;
     margin-bottom: 10px;
@@ -195,6 +196,7 @@ main {
 
 .introduction {
     font-family: "Great Vibes", cursive;
+    color: #4a352b;
     font-size: 36px;
     letter-spacing: 2px;
 }
@@ -250,6 +252,7 @@ main {
 
 .mission {
     font-family: "Great Vibes", cursive;
+    color: #4a352b;
     font-size: 36px;
     letter-spacing: 2px;
 }
@@ -262,14 +265,56 @@ main {
 
 .services {
         font-family: "Great Vibes", cursive;
+        color: #4a352b;
         font-size: 36px;
         letter-spacing: 2px;
+}
+
+/* Testimonials section */
+#testimonials {
+    background-color: #f0edec;
+    padding: 50px 0;
+    text-align: center;
+}
+
+#testimonials h2 {
+    text-align: center;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    color: #4a352b;
+    font-family: "Great Vibes", cursive;
+    font-size: 36px;
+    letter-spacing: 2px;
+    
+}
+
+.testimonial {
+    text-align: center;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: rgba(87, 68, 68, 0.8);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+.testimonial p {
+    text-align: center;
+    color: #f0edec;
+    margin-top: 0;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.testimonial .author {
+    font-style: italic;
+    font-size: 16px;
+    color: #4a352b;
 }
 
 /* Footer */
 
 footer {
-    background-color: rgba(87, 68, 68, 0.8);
+    background-color: #4a352b;
     color: #f0edec;
     text-align: center;
     padding: 20px 0;
@@ -352,6 +397,11 @@ footer {
 .services {
     font-size: 26px;
     text-align: center;
+}
+
+/* Testimonials section styles */
+#testimonials h2 {
+    font-size: 26px;
 }
 
 
@@ -459,6 +509,12 @@ footer {
         text-align: right;
     }
 
+    /* Testimonials section styles */
+    .testimonial {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
 }
 
 /* Large devices (laptops and desktops, 992px and up) */
@@ -475,6 +531,12 @@ footer {
     /* Mission section styles */
     .text-box2 {
         margin-left: 20px;
+    }
+
+    /* Testimonials section styles */
+    .testimonial {
+        margin-left: 20px;
+        margin-right: 20px;
     }
 
 }
@@ -540,4 +602,13 @@ footer {
         font-size: 56px;
     }
 
+    /* Testimonials section styles */ 
+    #testimonials h2 {
+        font-size: 56px;
+    }
+
+    .testimonial {
+        margin-left: 30px;
+        margin-right: 30px;
+    }
 }
