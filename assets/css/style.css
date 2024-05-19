@@ -378,6 +378,7 @@ p {
    .text-box {
    flex: 1; 
    margin-left: -10%; 
+   margin-right: 10px;
    background-color: rgba(87, 68, 68, 0.8); 
    color: #f0edec;
    padding: 3% 3% 3% 15%;
@@ -386,19 +387,6 @@ p {
 
    .text-box p {
    margin: 0;
-   }
-
-   .text-box2 p {
-   margin: 0;
-   }
-
-   .text-box2 {
-   flex: 1;
-   margin-right: -10%;
-   background-color: rgba(87, 68, 68, 0.8); 
-   color: #fff;
-   padding: 3% 15% 3% 3%;
-   border-radius: 5px;
    }
 
    .introduction {
@@ -419,17 +407,18 @@ p {
     margin-bottom: 0; 
    }
 
-   .text-box2 {
-   flex: 1;
-   margin-right: -10%;
-   background-color: rgba(87, 68, 68, 0.8); 
-   color: #fff;
-   padding: 3% 15% 3% 3%;
-   border-radius: 5px;
-   }
-   
    .text-box2 p {
     margin: 0;
+    }
+ 
+    .text-box2 {
+    flex: 1;
+    margin-right: -10%;
+    margin-left: 10px;
+    background-color: rgba(87, 68, 68, 0.8); 
+    color: #fff;
+    padding: 3% 15% 3% 3%;
+    border-radius: 5px;
     }
 
     .mission {
@@ -449,6 +438,15 @@ p {
         border-bottom: 1px solid #4a352b;
     }
 
+    /* Instroduction section styles */
+    .text-box {
+        margin-right: 20px;
+    } 
+
+    /* Mission section styles */
+    .text-box2 {
+        margin-left: 20px;
+    }
 
 }
 
@@ -470,17 +468,39 @@ p {
     .circle-wrapper {
         width: 350px; 
         height: 350px; 
+        margin-left: 150px;
     }
 
     .circle-image {
         width: 320px;
         height: 320px;
+        
+    }
+
+    .introduction {
+        font-size: 56px;
+    }
+
+    p {
+        font-size: 20px;
+    }
+
+    .text-box {
+        margin-right: 30px;
     }
 
     /* Mission section styles */
     .circle-wrapper2 {
         width: 350px; 
         height: 350px; 
+        margin-right: 150px;
     }
 
+    .mission {
+        font-size: 56px;
+    }
+
+    .text-box2 {
+        margin-left: 30px;
+    }
 }
