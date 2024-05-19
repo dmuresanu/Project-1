@@ -89,21 +89,243 @@ header a {
 /* Main */ 
 main {
     background-color:#E0E0F3;
+
     /* Make main element take up any surplus space to push footer down */
     flex: 1 0 auto;
 }
 
 /* Hero section */
 #hero {
-    height: 850px;
-    width: 100%;
     background: url(../images/hero.jpg) no-repeat center top/cover;
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-content {
+    text-align: center;
+    color: #f0edec;
+    z-index: 1;
+}
+
+.hero-content h2 {
+    font-family:"Great Vibes", cursive;
+    font-size: 36px;
+    margin-top: 250px;
+    margin-bottom: 10px;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 30px;
+    background-color: rgba(87, 68, 68, 0.8);
+    color: #f0edec;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color:  rgba(160, 106, 106, 0.8);
+}
+
+/* Introduction section styles */
+.circle-section {
+    background-color: #f0edec; 
+    padding: 50px 0;
+}
+
+.circle-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column; /* Change to column layout for mobile */
+    align-items: center; /* Center items vertically */
+    
+}
+
+.circle-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 250px; 
+    height: 250px; 
+    border: 5px solid rgba(87, 68, 68, 0.8); 
+    border-radius: 50%; 
+    padding: 20px; 
+}
+
+.circle-image {
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    position: absolute;
+}
+
+
+.circle-image.left {
+    background-image: url('/assets/images/Glamour.jpg'); 
+    background-size: cover;
+}
+
+.text-box {
+    background-color: rgba(87, 68, 68, 0.8); 
+    color: #fff;
+    padding: 3% 3% 3% 15%;
+    border-radius: 5px;
+    
+}
+
+.text-box p {
+    margin: 0;
+}
+
+.introduction {
+    font-family:"Great Vibes", cursive;
+    font-size: 36px;
+    letter-spacing: 2px;
+}
+
+
+/* Mission section styles */
+.circle-section2 {
+    background-color: #f0edec; 
+    padding: 50px 0;
+}
+
+.circle-content2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column-reverse; /* Change to column layout for mobile */
+    align-items: center; /* Center items vertically */
+}
+
+.circle-wrapper2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 250px; 
+    height: 250px; 
+    border: 5px solid rgba(87, 68, 68, 0.8); 
+    border-radius: 50%; 
+    padding: 20px; 
+}
+
+.circle-image {
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.circle-image.right {
+    background-image: url('/assets/images/GG.jpg'); 
+    background-size: cover;
+}
+
+.text-box2 {
+    background-color: rgba(87, 68, 68, 0.8); 
+    color: #fff;
+    padding: 3% 15% 3% 3%;
+    border-radius: 5px;
+}
+
+.text-box2 p {
+    margin: 0;
+}
+
+.mission {
+    font-family:"Great Vibes", cursive;
+    font-size: 36px;
+    letter-spacing: 2px;
 }
 
 /* Footer */
+
 footer {
-    background-color: #977d68
-    ;
+    background-color: rgba(87, 68, 68, 0.8);
+    color: #f0edec;
+    text-align: center;
+    padding: 20px 0;
+}
+
+#social-networks {
+    list-style: none;
+    padding: 0;
+}
+
+#social-networks li {
+    display: inline;
+    margin-right: 10px;
+}
+
+#social-networks li a {
+    color: #f0edec;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+#social-networks li a:hover {
+    color: #ff66b3;
+    transition: color 0.3s ease;
+}
+
+/*Media query: mobiles (up to 767px) */
+@media screen and (max-width: 767px) {
+
+/* Introduction section styles */
+.text-box {
+    background-color: rgba(87, 68, 68, 0.8); 
+    color: #f0edec;
+    margin-top: -25%;
+    padding: 35% 3% 3% 3%;
+    border-radius: 5px;
+}
+
+.text-box p {
+    margin: 0;
+}
+
+.introduction {
+    font-size: 26px;
+    text-align: center;
+}
+
+p { 
+    padding-top: 3%;
+    padding-bottom: 10%;
+    text-align: center;   
+}
+
+/* Mission section styles */
+.text-box2 {
+    background-color: rgba(87, 68, 68, 0.8); 
+    color: #f0edec;
+    margin-top: -25%;
+    padding: 35% 3% 3% 3%;
+    border-radius: 5px;
+}
+
+.text-box2 p {
+    margin: 0;
+}
+
+.mission {
+    font-size: 26px;
+    text-align: center;
+}
+
+p { 
+    padding-top: 3%;
+    padding-bottom: 10%;
+    text-align: center;   
+}
 }
 
 /* Media query: tablets and larger (768px and up) */
@@ -128,6 +350,97 @@ footer {
     .nav-toggle-label {
         display: none;
     }
+
+    #hero {
+        height: 850px;
+        width: 100%;
+        background: url(../images/hero.jpg) no-repeat center top/cover;
+    }
+
+    .hero-content h2 {
+        font-family:"Great Vibes", cursive;
+        font-size: 66px;
+    }
+
+   /* Introduction section styles */
+    .circle-content {
+    flex-direction: row; /* Reset back to row layout for tablets and larger */
+    }
+    
+   .circle-content2 {
+    flex-direction: row;
+   }
+
+   .circle-image {
+    margin-bottom: 0; 
+   }
+
+   .text-box {
+   flex: 1; 
+   margin-left: -10%; 
+   background-color: rgba(87, 68, 68, 0.8); 
+   color: #f0edec;
+   padding: 3% 3% 3% 15%;
+   border-radius: 5px;
+   }
+
+   .text-box p {
+   margin: 0;
+   }
+
+   .text-box2 p {
+   margin: 0;
+   }
+
+   .text-box2 {
+   flex: 1;
+   margin-right: -10%;
+   background-color: rgba(87, 68, 68, 0.8); 
+   color: #fff;
+   padding: 3% 15% 3% 3%;
+   border-radius: 5px;
+   }
+
+   .introduction {
+    text-align: right;
+   }
+
+   p { 
+    padding-top: 3%;
+    text-align: right;   
+}
+
+   /* Mission section styles */
+   .circle-content2 {
+    flex-direction: row;
+   }
+
+   .circle-image {
+    margin-bottom: 0; 
+   }
+
+   .text-box2 {
+   flex: 1;
+   margin-right: -10%;
+   background-color: rgba(87, 68, 68, 0.8); 
+   color: #fff;
+   padding: 3% 15% 3% 3%;
+   border-radius: 5px;
+   }
+   
+   .text-box2 p {
+    margin: 0;
+    }
+
+    .mission {
+        text-align: left;
+    }
+ 
+    .pmission { 
+     padding-top: 3%;
+     text-align: left;   
+    }
+
 }
 
 /* Large devices (laptops and desktops, 992px and up) */
@@ -135,5 +448,39 @@ footer {
     #menu a:hover{
         border-bottom: 1px solid #4a352b;
     }
-    
+
+
+}
+
+/* X-Large devices (Large Desktops, 1500px and up) */
+@media screen and (min-width: 1500px) {
+    /* Hero section */
+    #hero {
+        height: 1000px;
+    }
+
+    .hero-content h2 {
+        font-family:"Great Vibes", cursive;
+        font-size: 86px;
+        margin-top: 650px;
+        margin-bottom: 10px;
+    }
+
+    /* Introduction section styles */
+    .circle-wrapper {
+        width: 350px; 
+        height: 350px; 
+    }
+
+    .circle-image {
+        width: 320px;
+        height: 320px;
+    }
+
+    /* Mission section styles */
+    .circle-wrapper2 {
+        width: 350px; 
+        height: 350px; 
+    }
+
 }
