@@ -602,6 +602,11 @@ footer {
         margin-right: 10px;
     }
 
+    .testimonial-container {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+
     /* Gallery page */
     .gallery {
         justify-content: center;
@@ -630,6 +635,7 @@ footer {
         margin-left: 20px;
         margin-right: 20px;
     }
+    
 
     /* Gallery page */
     .intro {
