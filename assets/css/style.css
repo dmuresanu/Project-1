@@ -374,6 +374,64 @@ main {
     margin-bottom: 20px;
 }
 
+/* Contact page */
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact-form h2 {
+    margin-top: 80px;
+    color: #4a352b;
+    text-align: center;
+}
+
+.contact {
+
+    font-family: "Great Vibes", cursive;
+    font-size: 26px;
+    text-align: center;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button[type="submit"] {
+    background-color: #4a352b;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button[type="submit"]:hover {
+    background-color: #693b6b;
+}
+
 
 /* Footer */
 
@@ -612,6 +670,7 @@ footer {
         justify-content: center;
     }
 
+}
 }
 
 /* Large devices (laptops and desktops, 992px and up) */
