@@ -15,7 +15,7 @@ body {
     display: flex;
     flex-direction: column;
     /* Generic project styles */
-    color: #3a3a3a;
+    color: #4a352b;
     font-family: Josefin Sans, sans-serif;
 }
 
@@ -319,8 +319,23 @@ main {
 main {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center; /* Center items for smaller screens */
     padding: 20px;
+}
+
+.intro {
+    margin-top: 80px;
+    margin-bottom: 20px;
+    font-family: "Great Vibes", cursive;
+    font-size: 26px;
+    text-align: center;
+    color: #4a352b;
+    z-index: 1;
+    letter-spacing: 2px;
+}
+
+.top p {
+    text-align: center;
 }
 
 .gallery {
@@ -328,13 +343,14 @@ main {
     display: flex;
     flex-wrap: wrap;
     padding: 20px;
+    justify-content: space-around; /* Space images evenly for larger screens */
 }
 
 .image {
     margin: 10px;
     overflow: hidden;
     border-radius: 5px;
-    transition: transform 0.5s ease;
+    position: relative;
 }
 
 .image:hover {
@@ -345,6 +361,17 @@ main {
     width: 250px;
     height: 250px;
     object-fit: cover;
+    z-index: 1;
+}
+
+.call-to-action {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.call-to-action p {
+    font-size: 18px;
+    margin-bottom: 20px;
 }
 
 
@@ -441,13 +468,28 @@ footer {
     font-size: 26px;
 }
 
-/* Gallery pag */
+/* Gallery page */
+.intro {
+    text-align: right;
+    font-size: 36px;
+}
+
 .gallery {
-    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .image {
-    margin: 10px 5px;
+    width: 100%;
+    margin: 5px 0px;
+    transition: none; /* Remove transition on mobile */
+}
+
+.image img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
 }
 
 /* Media query: tablets and larger (768px and up) */
@@ -560,6 +602,11 @@ footer {
         margin-right: 10px;
     }
 
+    /* Gallery page */
+    .gallery {
+        justify-content: center;
+    }
+
 }
 
 /* Large devices (laptops and desktops, 992px and up) */
@@ -585,114 +632,25 @@ footer {
     }
 
     /* Gallery page */
-    .transition-image {
-        position: absolute;
-        top: 0px;
-        left: 0px;
-        opacity: 0;
-        transition: opacity 0.5s ease;
+    .intro {
+        font-size: 46px;
+    }
+    
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr); /* 5 images per row */
+        gap: 10px; 
     }
 
-    .transition-image:hover {
-        opacity: 1;
-    }
-
-    .transition-image2 {
-        position: absolute;
-        top: 0px;
-        left: 0px;
-        opacity: 0;
-        transition: opacity 0.5s ease;
-    }
-
-    .transition-image2:hover {
-        opacity: 1;
-    }
-
-    .transition-image3 {
-        position: absolute;
-        top: 0px;
-        left: 0px;
-        opacity: 0;
-        transition: opacity 0.5s ease;
-    }
-
-    .transition-image3:hover {
-        opacity: 1;
-    }
-
-    .transition-image4 {
-        position: absolute;
-        top: 0px;
-        left: 0px;
-        opacity: 0;
-        transition: opacity 0.5s ease;
-    }
-
-    .transition-image4:hover {
-        opacity: 1;
-    }
-
-    .transition-image5 {
-        position: absolute;
-        top: 0px;
-        left: 0px;
-        opacity: 0;
-        transition: opacity 0.5s ease;
-    }
-
-    .transition-image5:hover {
-        opacity: 1;
-    }
-
-    .transition-image6 {
-        position: absolute;
-        top: 0px;
-        left: 0px;
-        opacity: 0;
-        transition: opacity 0.5s ease;
-    }
-
-    .transition-image6:hover {
-        opacity: 1;
-    }
-
-    .transition-image7 {
-        position: absolute;
-        top: 0px;
-        left: 0px;
-        opacity: 0;
-        transition: opacity 0.5s ease;
-    }
-
-    .transition-image7:hover {
-        opacity: 1;
-    }
-
-    .transition-image8 {
-        position: absolute;
-        top: 0px;
-        left: 0px;
-        opacity: 0;
-        transition: opacity 0.5s ease;
-    }
-
-    .transition-image8:hover {
-        opacity: 1;
-    }
-
-    .transition-image9 {
-        position: absolute;
-        top: 0px;
-        left: 0px;
-        opacity: 0;
-        transition: opacity 0.5s ease;
-    }
-
-    .transition-image9:hover {
-        opacity: 1;
-    }
-
+    .transition-image,
+    .transition-image2,
+    .transition-image3,
+    .transition-image4,
+    .transition-image5,
+    .transition-image6,
+    .transition-image7,
+    .transition-image8,
+    .transition-image9,
     .transition-image10 {
         position: absolute;
         top: 0px;
@@ -701,6 +659,15 @@ footer {
         transition: opacity 0.5s ease;
     }
 
+    .transition-image:hover,
+    .transition-image2:hover,
+    .transition-image3:hover,
+    .transition-image4:hover,
+    .transition-image5:hover,
+    .transition-image6:hover,
+    .transition-image7:hover,
+    .transition-image8:hover,
+    .transition-image9:hover,
     .transition-image10:hover {
         opacity: 1;
     }
@@ -776,5 +743,10 @@ footer {
     .testimonial {
         margin-left: 30px;
         margin-right: 30px;
+    }
+
+    /* Gallery page */
+    .gallery {
+        gap: 20px; /* Increase gap for larger screens */
     }
 }
