@@ -15,13 +15,14 @@ body {
     display: flex;
     flex-direction: column;
     /* Generic project styles */
-    color: #4a352b;
+    color:  #3e2723; /* Darkened color for better contrast */
     font-family: Josefin Sans, sans-serif;
+    background-color: #fafafa; /* Lightened background color for better contrast */
 }
 
 /* Header */
 header {
-    background-color: #f0edec;
+    background-color: #ffffff; /* Lightened for better contrast */
     padding: 0 1rem;
     position: fixed;
     z-index: 99;
@@ -43,13 +44,14 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: "Montserrat", sans-serif;
+    font-family: "Great Vibes", cursive;
+    color: #3e2723; /* Darkened for better contrast */
 }
 
 #logo {
     font-family: "Great Vibes", cursive;
     letter-spacing: 2px;
-    color: #4a352b;
+    color: #3e2723; /* Darkened for better contrast */
     margin-top: .5em;
     margin-bottom: .5em;
 }
@@ -58,7 +60,7 @@ h6 {
     font-size: 110%;
     letter-spacing: 3px;
     list-style-type: none;
-    color: #4a352b;
+    color: #3e2723; /* Darkened for better contrast */
 }
 
 #menu li {
@@ -66,17 +68,17 @@ h6 {
 }
 
 .active {
-    border-bottom: 1px solid #4a352b;
+    border-bottom: 1px solid #3e2723; /* Darkened for better contrast */
 }
 
 /* Navbar styles with dropdown toggle */
 nav {
     position: absolute;
-    background-color: #f0edec;
+    background-color: #ffffff; /* Lightened for better contrast */
     width: 100%;
     left: 0;
     padding: 0 1rem;
-    box-shadow: 0 3px 3px #4a352b;
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
     display: none;
     top: 100%;
 }
@@ -96,7 +98,7 @@ nav {
 
 /* Main */
 main {
-    background-color: #f0edec;
+    background-color: #fafafa; /* Lightened for better contrast */
 
     /* Make main element take up any surplus space to push footer down */
     flex: 1 0 auto;
@@ -104,7 +106,7 @@ main {
 
 /* Hero section */
 #hero {
-    background: url(../images/hero.jpg) no-repeat center top/cover;
+    background: url(../images/hero.webp) no-repeat center top/cover;
     background-size: cover;
     background-position: center;
     height: 600px;
@@ -117,13 +119,13 @@ main {
 
 .hero-content {
     text-align: center;
-    color: #f0edec;
+    color: #ffffff; /* Ensure text stands out against the image */
     z-index: 1;
 }
 
 .hero-content h2 {
-    font-family: "Great Vibes", cursive;
-    color: darkgreen;
+
+    color: #004d40; /* Dark green for better contrast */
     font-size: 36px;
     margin-top: 250px;
     margin-bottom: 10px;
@@ -132,20 +134,20 @@ main {
 .cta-button {
     display: inline-block;
     padding: 10px 30px;
-    background-color: rgba(87, 68, 68, 0.8);
-    color: #f0edec;
+    background-color: rgba(62, 39, 35, 0.8); /* Darkened for better contrast */
+    color: #ffffff;
     text-decoration: none;
     border-radius: 5px;
     transition: background-color 0.3s ease;
 }
 
 .cta-button:hover {
-    background-color: rgba(160, 106, 106, 0.8);
+    background-color: rgba(160, 106, 106, 0.8); /* Lighter hover color for better contrast */
 }
 
 /* Introduction section styles */
 .circle-section {
-    background-color: #f0edec;
+    background-color: #fafafa; /* Lightened for better contrast */
     padding: 50px 0;
 }
 
@@ -153,10 +155,8 @@ main {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    flex-direction: column;
-    /* Change to column layout for mobile */
-    align-items: center;
-    /* Center items vertically */
+    flex-direction: column; /* Change to column layout for mobile */
+    align-items: center; /* Center items vertically */
 
 }
 
@@ -166,7 +166,7 @@ main {
     align-items: center;
     width: 250px;
     height: 250px;
-    border: 5px solid rgba(87, 68, 68, 0.8);
+    border: 5px solid rgba(62, 39, 35, 0.8); /* Darkened for better contrast */
     border-radius: 50%;
     padding: 20px;
 }
@@ -185,8 +185,8 @@ main {
 }
 
 .text-box {
-    background-color: rgba(87, 68, 68, 0.8);
-    color: #fff;
+    background-color: rgba(62, 39, 35, 0.8); /* Darkened for better contrast */
+    color: #ffffff;
     padding: 3% 3% 3% 15%;
     border-radius: 5px;
 
@@ -197,8 +197,7 @@ main {
 }
 
 .introduction {
-    font-family: "Great Vibes", cursive;
-    color: #4a352b;
+
     font-size: 36px;
     letter-spacing: 2px;
 }
@@ -206,7 +205,7 @@ main {
 
 /* Mission section styles */
 .circle-section2 {
-    background-color: #f0edec;
+    background-color:#fafafa; /* Lightened for better contrast */
     padding: 50px 0;
 }
 
@@ -214,10 +213,8 @@ main {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    flex-direction: column-reverse;
-    /* Change to column layout for mobile */
-    align-items: center;
-    /* Center items vertically */
+    flex-direction: column-reverse; /* Change to column layout for mobile */
+    align-items: center; /* Center items vertically */
 }
 
 .circle-wrapper2 {
@@ -226,7 +223,7 @@ main {
     align-items: center;
     width: 250px;
     height: 250px;
-    border: 5px solid rgba(87, 68, 68, 0.8);
+    border: 5px solid rgba(62, 39, 35, 0.8); /* Darkened for better contrast */
     border-radius: 50%;
     padding: 20px;
 }
@@ -244,7 +241,7 @@ main {
 }
 
 .text-box2 {
-    background-color: rgba(87, 68, 68, 0.8);
+    background-color:rgba(62, 39, 35, 0.8); /* Darkened for better contrast */
     color: #fff;
     padding: 3% 15% 3% 3%;
     border-radius: 5px;
@@ -255,8 +252,7 @@ main {
 }
 
 .mission {
-    font-family: "Great Vibes", cursive;
-    color: #4a352b;
+
     font-size: 36px;
     letter-spacing: 2px;
 }
@@ -268,15 +264,14 @@ main {
 }
 
 .services {
-    font-family: "Great Vibes", cursive;
-    color: #4a352b;
+
     font-size: 36px;
     letter-spacing: 2px;
 }
 
 /* Testimonials section */
 #testimonials {
-    background-color: #f0edec;
+    background-color: #fafafa; /* Lightened for better contrast */
     padding: 50px 0;
     text-align: center;
 }
@@ -285,8 +280,7 @@ main {
     text-align: center;
     margin-top: 3%;
     margin-bottom: 3%;
-    color: #4a352b;
-    font-family: "Great Vibes", cursive;
+
     font-size: 36px;
     letter-spacing: 2px;
 
@@ -296,14 +290,14 @@ main {
     text-align: center;
     padding: 20px;
     border-radius: 5px;
-    background-color: rgba(87, 68, 68, 0.8);
+    background-color: rgba(62, 39, 35, 0.8); /* Darkened for better contrast */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     margin-bottom: 30px;
 }
 
 .testimonial p {
     text-align: center;
-    color: #f0edec;
+    color: #ffffff;
     margin-top: 0;
     font-size: 18px;
     margin-bottom: 10px;
@@ -312,7 +306,7 @@ main {
 .testimonial .author {
     font-style: italic;
     font-size: 16px;
-    color: #4a352b;
+    color: #fafafa; /* Lightened for better contrast */
 }
 
 /* Gallery page */
@@ -326,10 +320,10 @@ main {
 .intro {
     margin-top: 80px;
     margin-bottom: 20px;
-    font-family: "Great Vibes", cursive;
-    font-size: 26px;
+    
+    font-size: 36px;
     text-align: center;
-    color: #4a352b;
+    
     z-index: 1;
     letter-spacing: 2px;
 }
@@ -382,17 +376,20 @@ main {
 
 .contact-form h2 {
     margin-top: 80px;
-    color: #4a352b;
+    
     text-align: center;
 }
 
 .contact {
-
-    font-family: "Great Vibes", cursive;
-    font-size: 26px;
-    text-align: center;
-    letter-spacing: 2px;
+    margin-top: 80px;
     margin-bottom: 20px;
+
+    font-size: 36px;
+    text-align: center;
+    
+    z-index: 1;
+    letter-spacing: 2px;
+
 }
 
 .form-group {
@@ -419,8 +416,8 @@ textarea {
 }
 
 button[type="submit"] {
-    background-color: #4a352b;
-    color: #fff;
+    background-color:  rgba(62, 39, 35, 0.8); /* Darkened for better contrast */
+    color: #ffffff;
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
@@ -429,15 +426,15 @@ button[type="submit"] {
 }
 
 button[type="submit"]:hover {
-    background-color: #693b6b;
+    background-color: rgba(160, 106, 106, 0.8); /* Lighter hover color for better contrast */
 }
 
 
 /* Footer */
 
 footer {
-    background-color: #4a352b;
-    color: #f0edec;
+    background-color: #3e2723; /* Darkened for better contrast */
+    color: #fafafa; /* Lightened for better contrast */
     text-align: center;
     padding: 20px 0;
 }
@@ -453,7 +450,7 @@ footer {
 }
 
 #social-networks li a {
-    color: #f0edec;
+    color:  #fafafa; /* Lightened for better contrast */
     font-size: 24px;
     text-decoration: none;
 }
@@ -468,8 +465,7 @@ footer {
 
     /* Introduction section styles */
     .text-box {
-        background-color: rgba(87, 68, 68, 0.8);
-        color: #f0edec;
+
         margin-top: -25%;
         padding: 35% 3% 3% 3%;
         border-radius: 5px;
@@ -528,6 +524,7 @@ footer {
 
 /* Gallery page */
 .intro {
+    font-size: 26px;
     text-align: right;
     font-size: 36px;
 }
@@ -548,6 +545,13 @@ footer {
     width: 250px;
     height: 250px;
     object-fit: cover;
+}
+
+/* Contact page */
+.contact {
+    font-size: 26px;
+    text-align: right;
+    font-size: 36px;
 }
 
 /* Media query: tablets and larger (768px and up) */
@@ -581,7 +585,7 @@ footer {
     }
 
     .hero-content h2 {
-        font-family: "Great Vibes", cursive;
+
         font-size: 66px;
     }
 
@@ -676,17 +680,30 @@ footer {
 /* Large devices (laptops and desktops, 992px and up) */
 @media screen and (min-width: 992px) {
     #menu a:hover {
-        border-bottom: 1px solid #4a352b;
+        border-bottom: 1px solid #3e2723; /* Darkened for better contrast */
     }
 
     /* Instroduction section styles */
+    .introduction{
+        font-size: 46px;
+    }
+
     .text-box {
         margin-right: 20px;
     }
 
     /* Mission section styles */
+    .mission {
+        font-size: 46px;
+    }
+
     .text-box2 {
         margin-left: 20px;
+    }
+
+    /* Services section styles */
+    .services {
+        font-size: 46px;
     }
 
     /* Testimonials section styles */
@@ -695,6 +712,9 @@ footer {
         margin-right: 20px;
     }
     
+    #testimonials h2 {
+        font-size: 46px;
+    }
 
     /* Gallery page */
     .intro {
@@ -737,6 +757,11 @@ footer {
         opacity: 1;
     }
 
+    /* Contact page */
+    .contact {
+        font-size: 46px;
+    }
+
 }
 
 /* X-Large devices (Large Desktops, 1500px and up) */
@@ -748,7 +773,7 @@ footer {
     }
 
     .hero-content h2 {
-        font-family: "Great Vibes", cursive;
+
         font-size: 86px;
         margin-top: 650px;
         margin-bottom: 10px;
@@ -813,5 +838,14 @@ footer {
     /* Gallery page */
     .gallery {
         gap: 20px; /* Increase gap for larger screens */
+    }
+
+    .intro {
+        font-size: 56px;
+    }
+
+    /* Contact page */
+    .contact {
+        font-size: 56px;
     }
 }
