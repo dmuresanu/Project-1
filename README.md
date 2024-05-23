@@ -132,6 +132,35 @@ Purpose of the Website - The website serves several important functions:
 
     - Demonstrates professionalism and modernity, aligning with industry standards and expectations, and instilling confidence in potential clients.
 
+## Design
+
+-   ### Imagery
+    -   The hero and large background images were meticulously selected to exude a warm and inviting ambiance, perfectly aligned with the essence of a makeup salon. Each image was chosen with the intention to convey professionalism, health, and beauty, thereby harmonizing with the primary goal of delivering exceptional makeup artistry services.
+
+-   ### Colour Scheme
+    -  The color palette was picked to make the website feel cozy and welcoming, just like stepping into Glamour Glow. The deep brown adds a touch of class and professionalism, while the lighter brown tones keep things friendly and relaxed. Together, they set the stage for a place where everyone feels at home while getting pampered.
+
+        ![Colour Palette](documentation/supp-images/color-palette.png)
+
+-   ### Typography
+    -   Google Fonts were used to import Great Vibes, Josefin Sans, Montserrat and Playfair Display fonts into styles.css.  These were chosen as they create a visually engaging and harmonious design. These fonts blend elegance, modernity, and readability, enhancing the overall aesthetic and user experience. This thoughtful mix ensures that the text is both attractive and easy to read, contributing to a polished and professional look throughout the website.
+
+
+-   ### Wireframes
+
+    -   #### Main Page Wireframes
+
+        ![Main](documentation/wireframes/index-page.png)
+
+    -   #### Gallery Page Wireframes
+
+        ![Menu](documentation/wireframes/menu-page.png)
+
+    -   #### Contact Page Wireframes
+
+        ![Contact](documentation/wireframes/contact-page.png)
+
+
 ## Technologies Used
 
 ### Languages Used
@@ -145,5 +174,110 @@ Purpose of the Website - The website serves several important functions:
 -   [Font Awesome:](https://fontawesome.com/) was used to add icons for aesthetic and UX purposes.
 -   [Git:](https://git-scm.com/) was used for version control by utilising the Gitpod terminal to commit to Git and Push to GitHub.
 -   [GitHub:](https://github.com/) is used as the respository for the projects code after being pushed from Git.
--   [Microsoft Paint 3D:](https://www.microsoft.com/en-us/p/paint-3d/9nblggh5fv99?activetab=pivot:overviewtab) was used for resizing images and editing photos for the website.
 
+
+## Testing
+
+### Validator Testing
+
+- [HTML Validator](https://validator.w3.org/)
+
+    - result for index.html
+      ![HTML results index](documentation/validation-results/index-validation.png)
+    - result for gallery.html
+      ![HTML results menu](documentation/validation-results/html-validation-result-2.png)
+    - result for contact.html
+      ![HTML results contact](documentation/validation-results/html-validation-result-3.png)
+
+    - Full validation results are available on github here :
+
+        - <a href="https://github.com/elainebroche-dev/ms1-thrive/blob/master/documentation/validation-results/html-validation-results-index.pdf" target="_blank">HTML Results - Home Page</a>
+
+        - <a href="https://github.com/elainebroche-dev/ms1-thrive/blob/master/documentation/validation-results/html-validation-results-menu.pdf" target="_blank">HTML Results - Menu Page</a>
+
+        - <a href="https://github.com/elainebroche-dev/ms1-thrive/blob/master/documentation/validation-results/html-validation-results-contact.pdf" target="_blank">HTML Results - Contact Page</a>
+
+- [CSS Validator](https://jigsaw.w3.org/css-validator/)
+
+    - result for styles.css 
+      ![CSS results 1](documentation/validation-results/css-validation-result-1.png)
+      ![CSS results 2](documentation/validation-results/css-validation-result-2.png)
+
+      The warnings are due to 1) import of the Google fonts and 2) a webkit extension for Safari support of the flip-card effect used on the home page.
+
+    - Full validation results are available on github here :
+
+        - <a href="https://github.com/elainebroche-dev/ms1-thrive/blob/master/documentation/validation-results/css-validation-results.pdf" target="_blank">CSS Results - styles.css</a>
+
+### Browser Compatibility
+
+- Testing has been carried out on the following browsers :
+    - Chrome Version 90.0.4430.212 (Official Build) (64-bit)
+    - Firefox Version 88.0.1 (64-bit)
+    - Edge Version 90.0.818.62 (Official build) (64-bit)
+    - Safari on macOS Catalina (Safari  Version 14.0.3)
+    
+### Test Cases and Results
+
+- The below table details the test cases that were used, the results and a cross-reference to the Feature ID that each test case exercised (click to open iamge):
+
+  ![Test Results](documentation/supp-images/test-cases.png)
+
+### Known bugs
+
+- My mentor reported an issue with the "Send Message" button when viewed on an iphone during a review meeting.  Neither of us has since been able to re-create this using the browser dev tools but I am adding an image of the issue here for completeness :
+
+  ![Bug01](documentation/supp-images/bug01-send-message-issue.png)
+
+## Deployment
+
+### How this site was deployed
+
+- In the GitHub repository, navigate to the Settings tab, then choose Pages from the left hand menu 
+- From the source section drop-down menu, select the Master Branch
+- Once the master branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment
+- Any changes pushed to the master branch will take effect on the live project
+
+  The live link can be found here - [THRIVE Juices and Smoothies](https://elainebroche-dev.github.io/ms1-thrive/index.html) 
+
+### How to clone the repository
+
+- Go to the https://github.com/elainebroche-dev/ms1-thrive repository on GitHub 
+- Click the "Code" button to the right of the screen, click HTTPs and copy the link there
+- Open a GitBash terminal and navigate to the directory where you want to locate the clone
+- On the command line, type "git clone" then paste in the copied url and press the Enter key to begin the clone process
+ 
+## Credits 
+
+### Content 
+- Content on the menu page was loosely based on menus on [Jump Juice Bar](https://www.jumpjuicebar.com/menu-nutrition-smoothies/)
+- All other content was written by the developer
+
+### Code
+- Code on how to do the fade-in of the hero image came from information on this page : [CSS Image fade-in tutorial](https://blog.hubspot.com/website/css-fade-in)
+- Code on how to do a rounded button as seen on the Home page was based on code on : [W3Schools Rounded button tutorial](https://www.w3schools.com/howto/howto_css_round_buttons.asp)
+- Code on how to do the flip-card effect on the Home page was based on example code on : [W3Schools Flip card tutorial](https://www.w3schools.com/howto/howto_css_flip_card.asp)
+- Code on how to include google map with marker was based on code from this site :  [How to embed Google Map](https://www.maps.ie/create-google-map/)
+- Code on how to implement flex boxes was based on instructions from [YouTube Flexbox Tutorial](https://www.youtube.com/watch?v=S0a7PEOi0do)
+
+### Media 
+- The colours used were based on a citrus/pastel palette from this website : [Lily Bug Design - Colour Wall](https://www.lilybugdesign.co.nz/colour-wall) 
+- The icons in the header, footer and on the back of the flip-cards were taken from [Font Awesome](https://fontawesome.com/)
+- The fonts used were imported from [Google Fonts](https://fonts.google.com/)
+
+- All images were downloaded from [Unsplash](https://unsplash.com) :
+
+    - <a href="https://images.unsplash.com/photo-1546548970-71785318a17b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80">Main (hero/landing) image and background image</a> photo by <a href="https://unsplash.com/@brunabranco?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Bruna Branco</a> 
+
+    - <a href="https://unsplash.com/photos/9aOswReDKPo?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink" target="_blank" rel="noopener">Avocado</a> photo by <a href="https://unsplash.com/@thoughtcatalog?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank" rel="noopener">Thought Catalog</a>
+
+    - <a href="https://images.unsplash.com/photo-1595475207225-428b62bda831?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" target="_blank" rel="noopener">Watermelon</a> photo by <a href="https://unsplash.com/@amyshamblen?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank" rel="noopener">Amy Shamblen</a> 
+
+    - <a href="https://images.unsplash.com/photo-1564769610726-59cead6a6f8f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=448&q=80" target="_blank" rel="noopener">Sliced oranges</a> photo by <a href="https://unsplash.com/@euniquedeeann?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank" rel="noopener">Eunique Deeann</a> 
+
+    - <a href="https://images.unsplash.com/photo-1559181567-c3190ca9959b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&q=80" target="_blank" rel="noopener">Cherries</a> photo by <a href="https://unsplash.com/@picoftasty?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank" rel="noopener">Mae Mu</a> 
+
+
+### Acknowledgments
+
+- Thank you to my mentor Brian Macharia who gave me very good advice and feedback on how to plan and execute this project and who provided me with lots of pointers on resources to help select colours and images and well as resources to help with coding and testing.
