@@ -379,7 +379,7 @@ main {
 
 .contact-form-container {
     flex: 2;
-    max-width: 800px; /* Adjust as needed */
+    max-width: 800px;
     margin-right: 20px;
 }
 
