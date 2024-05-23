@@ -55,28 +55,50 @@
 
     <!-- Main content-->
     <main>
-        <section class="contact-form">
-            <div>
+        <section class="contact-section">
+            <div class="contact-form">
                 <h2 class="contact">Contact Us</h2>
+                <form action="https://formdump.codeinstitute.net" method="post">
+                    <div class="form-group">
+                        <label for="name">Your Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Your Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit">Submit</button>
+                    </div>
+                </form>
             </div>
-            <form action="submit_form.php" method="post">
-                <div class="form-group">
-                    <label for="name">Your Name:</label>
-                    <input type="text" id="name" name="name" required>
+            <div class="contact-info">
+                <div class="address">
+                    <h3>Our Address</h3>
+                    <p>2A Main St</p>
+                    <p>Castleredmond, Ballinacurra,</p> 
+                    <p>Co. Cork, P25 X4Y0</p>
                 </div>
-                <div class="form-group">
-                    <label for="email">Your Email:</label>
-                    <input type="email" id="email" name="email" required>
+                <div class="opening-times">
+                    <h3>Opening Times</h3>
+                    <p>Mon: Closed</p>
+                    <p>Tue - Sat: 9:00 AM - 5:00 PM</p>
+                    <p>Sun: Closed</p>
                 </div>
-                <div class="form-group">
-                    <label for="message">Message:</label>
-                    <textarea id="message" name="message" rows="5" required></textarea>
-                </div>
-                <div class="form-group">
-                    <button type="submit">Submit</button>
-                </div>
-            </form>
+            </div>
         </section>
+
+        <!-- Map container -->
+<div class="map-container">
+    <h3>Our Location</h3>
+    <div style="width: 100%">
+        <iframe width="100%" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=400&amp;hl=en&amp;q=2A%20Main%20St,%20Castleredmond,%20Ballinacurra,%20Co.%20Cork,%20P25%20X4Y0+(Glamour%20Glow)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="https://www.gps.ie/">gps systems</a></iframe>
+    </div>
+</div>
     </main>
 
    <!-- Footer -->
@@ -118,7 +140,7 @@
         <div class="footer-section subscribe">
             <h4>Don't Miss Out</h4>
             <p>Subscribe to our newsletter for exclusive beauty tips and special offers. </p>
-            <form id="subscribe-form">
+            <form id="subscribe-form" method="POST" action="https://formdump.codeinstitute.net">
                 <input type="email" name="email" placeholder="Enter your email" required>
                 <button type="submit">Subscribe</button>
             </form>
